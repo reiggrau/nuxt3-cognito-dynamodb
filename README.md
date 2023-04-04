@@ -209,3 +209,5 @@ const { status, data, signIn, signOut } = useAuth();
 }
 </style>
 ```
+
+NOTE: If you are trying to use tailwind syntax in the 'style' tag of your Vue component, you might encounter an annoying 'Unknown at rule @apply' warning (VS code). To fix it, open your VSCode Global 'settings.json' by pressing Cmd+Shift+P and then choosing "Preferences: Open User Settings (JSON)". Then add "scss.lint.unknownAtRules": "ignore" in the JSON object.
