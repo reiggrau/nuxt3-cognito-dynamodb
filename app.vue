@@ -11,7 +11,7 @@ useHead({
             <!-- <AuthenticationStatus /> -->
         </div>
         <!-- <Welcome /> -->
-        <!-- <NuxtPage /> -->
+        <NuxtPage />
     </div>
 </template>
 

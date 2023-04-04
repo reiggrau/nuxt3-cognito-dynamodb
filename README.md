@@ -4,7 +4,7 @@
 
 -   [nuxt-auth](https://sidebase.io/nuxt-auth/getting-started/installation)
 
--   [Tailwind](https://tailwindcss.com/docs/guides/nuxtjs)
+-   [tailwindcss](https://tailwindcss.com/docs/guides/nuxtjs)
 
 ## Nuxt 3 setup
 
