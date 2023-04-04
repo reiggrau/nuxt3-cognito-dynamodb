@@ -5,10 +5,8 @@ useHead({
 </script>
 
 <template>
-    <!-- <div class="min-h-screen h-full relative bg-gray-100 pb-20"> -->
     <div class="body">
         <Navbar />
-        <!-- <div class="fixed bottom-0 w-full"> -->
         <div class="main">
             <!-- <AuthenticationStatus /> -->
         </div>
@@ -18,22 +16,11 @@ useHead({
 </template>
 
 <style>
-body {
-    margin: 0;
-}
-
 .body {
-    box-sizing: border-box;
-    min-height: 100vh;
-    height: 100%;
-    position: relative;
-    background-color: #f3f4f6;
-    padding-bottom: 5rem;
+    @apply min-h-screen h-full relative bg-gray-100 pb-20;
 }
 
 .main {
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
+    @apply fixed bottom-0 w-full;
 }
 </style>
