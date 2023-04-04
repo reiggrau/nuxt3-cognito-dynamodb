@@ -177,6 +177,8 @@ await signOut() // Sign out the user
 
 Example component (with [Tailwind](https://tailwindcss.com/docs/guides/nuxtjs) installed):
 
+<img src="public/nuxtAuth_01.gif">
+
 ```sh
 # file: e.g ~/components/LoginButton.vue
 <script setup lang="ts">
