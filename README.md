@@ -150,7 +150,7 @@ declare namespace NodeJS {
 }
 ```
 
-This will tell TypeScript that our environment variables for COGNITO_CLIENT_ID and COGNITO_CLIENT_SECRETwill never be undefined.
+This will tell TypeScript that our environment variables for COGNITO_CLIENT_ID and COGNITO_CLIENT_SECRET will never be undefined.
 
 In the root folder, create a file named .env.local. Inside that file, you need to define the necessary variables:
 
@@ -163,3 +163,7 @@ COGNITO_ISSUER = https://cognito-idp.<REGION>.amazonaws.com/<USER_POOL_ID>
 NOTE: If you don't have a cognito 'User Pool' and/or don't know how to get the Client ID, Client Secret and the Issuer, follow this tutorial to create one and get them: [Secure User Authentication with Next.js, NextAuth.js, and AWS Cognito](https://evoila.com/de/blog/2023/03/07/secure-user-authentication-with-next-js-nextauth-js-and-aws-cognito-2/)
 
 Now you can now use all user-related functionality, for example:
+
+```sh
+
+```
