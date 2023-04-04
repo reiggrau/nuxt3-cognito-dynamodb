@@ -1,8 +1,10 @@
 # Source guides
 
--   [Nuxt 3](https://nuxt.com/docs/getting-started/installation) installation
+-   [Nuxt 3](https://nuxt.com/docs/getting-started/installation)
 
--   [nuxt-auth](https://sidebase.io/nuxt-auth/getting-started/installation) authentification module
+-   [nuxt-auth](https://sidebase.io/nuxt-auth/getting-started/installation)
+
+-   [Tailwind](https://tailwindcss.com/docs/guides/nuxtjs)
 
 ## Nuxt 3 setup
 
