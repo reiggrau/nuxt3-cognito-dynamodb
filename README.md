@@ -1,8 +1,30 @@
-# Nuxt 3 Minimal Starter
+# Source guides
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+-   [Nuxt 3](https://nuxt.com/docs/getting-started/installation) installation
 
-## Setup
+-   [nuxt-auth](https://sidebase.io/nuxt-auth/getting-started/installation) authentification module
+
+## Nuxt 3 setup
+
+### Installation
+
+Open a terminal (if you're using Visual Studio Code, you can open an integrated terminal) and use the following command to create a new starter project:
+
+Start a new Nuxt 3 project:
+
+```bash
+# npx
+npx nuxi init <project-name>
+
+# pnpm
+pnpm dlx nuxi init <project-name>
+```
+
+Open your project folder in Visual Studio Code:
+
+```bash
+code <project-name>
+```
 
 Make sure to install the dependencies:
 
@@ -17,7 +39,7 @@ npm install
 pnpm install
 ```
 
-## Development Server
+### Development Server
 
 Start the development server on `http://localhost:3000`
 
@@ -25,7 +47,7 @@ Start the development server on `http://localhost:3000`
 npm run dev
 ```
 
-## Production
+<!-- ## Production
 
 Build the application for production:
 
@@ -40,4 +62,16 @@ npm run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-# nuxt3-cognito-dynamodb
+# nuxt3-cognito-dynamodb -->
+
+## nuxt-auth
+
+nuxt-auth is a feature-packed, open-source authentication module for Nuxt 3 applications.
+
+### Installation
+
+Open a terminal and use the following command:
+
+```bash
+npm i -D @sidebase/nuxt-auth
+```
