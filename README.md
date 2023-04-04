@@ -165,5 +165,47 @@ NOTE: If you don't have a cognito 'User Pool' and/or don't know how to get the C
 Now you can now use all user-related functionality, for example:
 
 ```sh
+# file: e.g ~/pages/login.vue
+const { status, data, signIn, signOut } = useAuth()
 
+status.value // Session status: `unauthenticated`, `loading`, `authenticated`
+data.value // Session data, e.g., expiration, user.email, ...
+
+await signIn() // Sign in the user
+await signOut() // Sign out the user
+```
+
+Example component (with [Tailwind](https://tailwindcss.com/docs/guides/nuxtjs) installed):
+
+```sh
+# file: e.g ~/components/LoginButton.vue
+<script setup lang="ts">
+const { status, data, signIn, signOut } = useAuth();
+</script>
+
+<template>
+    <div class="login-div">
+        <button v-if="status === 'authenticated'" class="login-button" @click="signOut({ callbackUrl: '/' })">
+            <span>Logout</span>
+        </button>
+        <button v-else class="login-button" @click="signIn()">
+            <span>Login</span>
+        </button>
+        <li v-if="status === 'authenticated' && data?.user?.email" class="user-info">
+            <h1>{{ data?.user?.email }}</h1>
+        </li>
+    </div>
+</template>
+
+<style lang="css" scoped>
+.login-div {
+    @apply flex justify-between items-center;
+}
+.user-info {
+    @apply block py-2 pr-4 pl-3 mx-2 rounded md:border-0 md:p-0 text-white md:hover:text-white hover:bg-gray-700 md:hover:bg-transparent;
+}
+.login-button {
+    @apply block py-2 pr-4 pl-3 mx-2 rounded md:border-0 md:p-0 text-gray-400 md:hover:text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent;
+}
+</style>
 ```
