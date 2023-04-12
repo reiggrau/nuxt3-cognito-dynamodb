@@ -10,10 +10,10 @@
                         <nuxt-link href="/" class="nav-link"> Home </nuxt-link>
                     </li>
                     <li>
-                        <nuxt-link href="/protected/globally" class="nav-link"> Globally Protected </nuxt-link>
+                        <nuxt-link href="/protected/user" class="nav-link"> User Page </nuxt-link>
                     </li>
                     <li>
-                        <nuxt-link href="/protected/locally" class="nav-link"> Locally Unprotected </nuxt-link>
+                        <nuxt-link href="/protected/admin" class="nav-link"> Admin Page </nuxt-link>
                     </li>
                     <li class="hidden md:block border-l-2 border-gray-700" />
                     <LoginButton />
