@@ -21,8 +21,8 @@ import { DynamoDBAdapter } from "@next-auth/dynamodb-adapter";
 
 const config: DynamoDBClientConfig = {
     credentials: {
-        accessKeyId: process.env.NEXT_AUTH_AWS_ACCESS_KEY as string,
-        secretAccessKey: process.env.NEXT_AUTH_AWS_SECRET_KEY as string,
+        accessKeyId: process.env.NEXT_PUBLIC_AWS_ACCESS_KEY_ID as string,
+        secretAccessKey: process.env.NEXT_PUBLIC_AWS_SECRET_ACCESS_KEY as string,
     },
     region: process.env.NEXT_AUTH_AWS_REGION,
 };

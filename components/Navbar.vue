@@ -1,3 +1,7 @@
+<script lang="ts" setup>
+const { status } = useAuth();
+</script>
+
 <template>
     <nav class="nav">
         <div class="nav-div">
@@ -12,7 +16,7 @@
                     <li>
                         <nuxt-link href="/protected/user" class="nav-link"> User Page </nuxt-link>
                     </li>
-                    <li>
+                    <li v-if="status === 'authenticated'">
                         <nuxt-link href="/protected/admin" class="nav-link"> Admin Page </nuxt-link>
                     </li>
                     <li class="hidden md:block border-l-2 border-gray-700" />
