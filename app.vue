@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-    title: "nuxt3-cognito-dynamodb",
+    title: "OPC Nuxt | Home",
 });
 </script>
 
